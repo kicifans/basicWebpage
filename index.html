@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style type="text/css">
+
+
+      
+
+      #logo {
+          width: 50px;
+      }
+
+      .jumbotron {
+          text-align: center;
+          margin-top: 50px;
+          background-image: url("background_opacity.png");
+          background-size: cover;
+         
+          
+      }
+
+
+      #cardContainer {
+          width: 1200px;
+          margin: 0 auto;
+      
+          
+      }
+      #cardContainer img {
+          max-width: 400px;
+
+      }
+
+      h2 {
+          text-align: center;
+          padding-bottom: 25px;
+      }
+      #pakalpojumi {
+          padding-top: 60px;
+      }
+
+      #parMums {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 60px;
+      }
+
+      #parMums img {
+          height: 380px;
+          margin-right: 20px;
+      } 
+
+      #parMums ul {
+          position: relative;
+          left: 20px;
+      }
+
+      #kontakti {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 60px;
+      }
+
+     #footer {
+        background-color: rgb(169, 172, 172);
+        height: 300px;
+        text-align: center;
+        padding: 100px;
+        margin-top: 70px
+     }
+
+     
+     #footer img {
+        width: 100px;
+        
+    }
+
+     textarea {
+        resize: none;
+    }
+      
+    
+    </style>
+
+         <title>Krist's test page</title>
+  </head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="120">
+
+
+<!-- Optional JavaScript -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+    <img src="logo.png" id="logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#jumbotron">Sākums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pakalpojumi">Pakalpojumi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#parMums" >Par mums</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#kontakti" >Kontakti</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="" data-toggle="modal" data-target="#contactForm">Sazināties ar mums</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="email" placeholder="E-pasts">
+        <input class="form-control mr-sm-2" type="password" placeholder="Parole">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ienākt</button>
+      </form>
+    </div>
+  </nav>
+
+<!--Jumbotron-->
+
+<div class="jumbotron" id="jumbotron">
+    <h1 class="display-4">Random corporation</h1>
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Pasaulē nav nekā stiprāka par mierīgu prātu.</p>
+        <footer class="blockquote-footer"><cite title="Source Title">/Eliuds Kipčoge/</cite></footer>
+      </blockquote>
+    <hr class="my-4">
+    <p>Atsūti mums ziņu un mēs veiksim bezmaksas konsultāciju kā Jūs varat uzlabot savas kompānijas datu drošību</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactForm">Sazināties ar mums</button>
+  </div>
+
+  <!--Cards-->
+  <div id="pakalpojumi" class="container"> 
+      <h2 class="display-4">Mūsu piedāvātie pakalpojumi:</h2>
+      <br>
+    <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="aizsardziba.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Datu aizsardzība</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in felis at orci convallis imperdiet. Praesent porta iaculis consectetur. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="drosiba.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Drošības risinājumi</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in felis at orci convallis imperdiet. Praesent porta iaculis consectetur. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="serveris.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Serveru uzstādīšana/konfigurēšana</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in felis at orci convallis imperdiet. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="konsultacija.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Konsultācija</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in felis at orci convallis imperdiet. Praesent porta iaculis consectetur. </p>
+            </div>
+          </div>
+        </div>
+         </div>
+        </div>
+        <hr>
+
+ <!--par mums-->
+        <div id="parMums" class="container">
+            <h2 class="display-4">Par mums</h2>
+            <img src="company.jpg" class="rounded float-left">
+            <p class="parMumsTeksts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in felis at orci convallis imperdiet. 
+			Praesent porta iaculis consectetur. Maecenas in erat eu magna eleifend fringilla. Cras ac turpis ullamcorper, egestas nibh ac, imperdiet lorem.
+			Maecenas a blandit quam. 
+			Sed nec pharetra ex, vitae vestibulum nunc. 
+			Vestibulum quam turpis, varius vel pellentesque vel, dictum eget nisi.
+            </p>
+            <p> Šobrīd piedāvājam jau vairāk kā 30 dažādus pakalpojumus sastībā ar datu un telpu drošību,
+                kā arī ir nodibināts sadarbības līgums ar citām šīs sfēras kompānijām, ja gadījumā ir
+                 kāds specifisks darbs, kas nav mūsu sarakstā. Tāpēc droši sazinities ar mums un pārējo 
+                 izdarīsim mēs!
+            </p>
+
+            <p class=h4 >Kompānijas sasniegumi</p>
+
+            <ul>
+                <li>1923. gadā kompānija dibināta</li>
+                <li>1932. gadā tiek apkalpots 100. klients</li>
+                <li>1832. gadā aņemts ISO klases sertifikāts</li>
+                <li>1998. gadā noslēgts sadarbības līgums ar Microsoft</li>
+                <li>2004. gadā paplašinam darbību arī Baltijas valstīs</li>
+                <li>2008. gadā apvienojamies ar "Other company" uzņēmumu</li>
+            </ul>
+
+        </div>
+        <hr>
+<!--KONTAKTI-->
+        <div id="kontakti" class="container"> 
+            <h2 class="display-4">Kontakti</h2>
+            <div class="row">
+                <div class="col">
+            
+            <dl class="row">
+                <dt class="col-sm-5">"SIA Random corporation"</dt>
+                <br>
+                <dd class="col-sm-7"> </dd>
+                <dt class="col-sm-5">Adrese</dt>
+                <dd class="col-sm-7">Anniņmuižas bulvāris 12, LV-9038</dd>
+
+                <dt class="col-sm-5 text-truncate">Galvenais projektu vadītājs</dt>
+                <dd class="col-sm-7">+371 18294783</dd>
+                <dt class="col-sm-5 text-truncate">Projektu vadītājs</dt>
+                <dd class="col-sm-7">+371 18293383</dd>
+                <dt class="col-sm-5 text-truncate">Plānošanas nod. vadītājs</dt>
+                <dd class="col-sm-7">+371 182232783</dd>
+              
+                <dt class="col-sm-5">Darba laiks</dt>
+                <dd class="col-sm-7">
+                  <p>Pirmdiena , 09:00 - 18:00</p>
+                  <p>Otrdiena , 09:00 - 18:00</p>
+                  <p>Trešdiena , 09:00 - 18:00</p>
+                  <p>Ceturtdiena , 09:00 - 18:00</p>
+                  <p>Piektdiena , 09:00 - 14:00</p>
+                  <p>Sestdiena , -</p>
+                  <p>Svētdiena , -</p>
+                </dd>
+              
+                <dt class="col-sm-5">Reģistrācijas numurs</dt>
+                <dd class="col-sm-7">LV400092849284</dd>
+              
+                <dt class="col-sm-5 text-truncate">Konta nr.</dt>
+                <dd class="col-sm-7">LV48HABA39582748463</dd>
+
+                </dl>
+                
+            </div>
+            <div class="col">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.8182799903147!2d24.022028252745194!3d56.954984818884576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedab206f8ae33%3A0x7fbc15e95c94643b!2zQW5uacWGbXVpxb5hcyBidWx2xIFyaXMgMTIsIEt1cnplbWVzIHJham9ucywgUsSrZ2EsIExWLTEwNjc!5e0!3m2!1slv!2slv!4v1580994163598!5m2!1slv!2slv" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" id="location"></iframe> 
+            </div>
+
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer">
+            <img src="logo.png">
+
+
+        </div>
+        
+        <!-- Modal -->
+            <div class="modal fade" id="contactForm"  tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Kontaktforma</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <p class="h6">Ja jums ir kādi jautājumi vai ieteikumi, aizpildiet kontaktformu un mēs ar jums
+                            sazināsimies 2-4 darba dienu laikā.
+                        </p>
+                        <form>
+                        
+                            <div class="form-group">
+                            <label for="email">Jūsu e-pasta adrese</label>
+                            <input type="email" class="form-control" id="email">
+                            <small class="form-text text-muted">Jūsu e-pasts netiks nodots trešajām personām</small>
+                            </div>
+                            <div class="form-group">
+                            <label for="subject">Lūdzu ierakstiet sev interesējošo tematu </label>
+                            <input type="text" class="form-control" id="subject">
+                            </div>
+                            <div class="form-group" >
+                                <label for="text">Lūdzu ierakstiet ziņojumu </label>
+                                <textarea class="form-control" id="text" rows="3"></textarea>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Aizvērt</button>
+                    <button type="submit" class="btn btn-primary">Nosūtīt</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+
+              
+                
+             
+
+
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  
+
+
+</body>
+</html>
